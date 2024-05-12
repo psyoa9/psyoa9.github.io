@@ -1,0 +1,46 @@
+<!doctype html>
+    <html lang="en-GB">
+        <head>
+            <meta charset="utf-8" />
+            <title>People Search</title>
+            
+            <link rel="stylesheet" href="style.css" />
+            <!--<script src="script.js" defer></script>-->
+            <!--<script src="script2.js" type = "module"></script>-->
+            <script type="module">
+                import { fetchData } from './script2.js';
+                // make 'fetchData' available to all other JavaScript
+                window.fetchData = fetchData;
+            </script>
+
+        </head>
+        <body>
+            <div id = "container"> 
+                <header>
+                    <h1>People Search</h1>
+                
+                    <nav>
+                        <ul class = "navbar">
+                            <li><a href ="people-search.html">People Search</a></li>
+                            <li><a href ="vehicle-search.html">Vehicle Search</a></li>
+                            <li><a href ="add-vehicle.html">Add a Vehicle</a></li>   
+                        </ul>
+                    </nav>
+                </header>
+                <aside>
+                    <img src="images/magnifying.png" alt="Magnifing Glass" >
+                </aside>
+                <main>
+                    <div>
+                        <p>Search by driver name <input type="text" id="name"></p>
+                        <p>Search by driving license <input type="text" id="license"></p>
+                        <button id="submit">Submit</button>
+                    </div>
+                    <div class = "results">(For result display)</div>
+                </main>
+                <footer>
+                    <p>Footer Section &copy; 2024 </p>
+                </footer>
+            </div>
+        </body>
+    </html>

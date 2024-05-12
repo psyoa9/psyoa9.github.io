@@ -1,0 +1,151 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    background-color: rgb(247, 199, 207);
+}
+
+main, aside, footer {
+    border: 1px solid black; 
+    padding: 10px; 
+    margin: 10px; 
+    opacity:0.7;
+}
+
+header { 
+    border: 1px solid black; 
+    padding: 10px; 
+    margin: 10px; 
+    grid-column: 1 / -1; 
+    grid-row: 1; 
+    font-family: Georgia;
+}
+
+.navbar {
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    background:rgb(215, 47, 75);
+    opacity:0.6;
+    height: 40px;
+}
+
+.navbar > li {
+    flex: 1;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 130px 120px; 
+}
+
+a:hover { 
+    text-decoration: none; 
+    color: black;
+}
+
+
+aside {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+aside img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+main { 
+    grid-column: 2; 
+    grid-row: 2; 
+}
+
+footer {
+    display: flex;
+    grid-column: 1 / -1; /* Span across all columns */
+    grid-row: 3; /* Bottom row */
+    bottom: 0; /* Stick to the bottom */
+
+}
+
+h1 {
+    color: rgb(144, 40, 57); 
+    text-align: center;
+    font-family: Georgia
+}
+
+.results{
+    border: 2px dotted white; /* Add border */
+    background: rgb(236, 147, 162);
+    margin: 10px; /* Add margin */
+    color: black;
+    text-align: center;
+}
+
+.search-driver {
+    margin: 10px;
+    /*width: 100px; /* Adjust the width as needed */
+    text-align: center;
+}
+
+.search-license {
+    margin: 10px;
+    /*width: 100px; /* Adjust the width as needed */
+    text-align: center;
+}
+
+.submit-button {
+    margin: 10px auto;
+    /*width: 100px; /* Adjust the width as needed */
+    /*display: block;*/
+    background-color: rgb(158, 206, 158);
+    border-radius: 5px; /* Add rounded corners */
+    border: none;
+    text-decoration: none; /* Remove text decoration */
+    color: black;
+} 
+
+/* Responsive layout for screens less than 500px */
+@media screen and (max-width: 500px) {
+    #container {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 10px;
+    }
+
+    .navbar {
+        display: block;
+        text-align: left;
+        height: 60px;
+    }
+
+    .navbar > li {
+        text-align: left;
+           
+        line-height: 20px;
+    }
+    
+    aside {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    main {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    footer {
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
