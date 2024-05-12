@@ -1,8 +1,6 @@
-# psyoa9.github.io
+## Requirements 
 
-### Requirements 
-
-#### Page heading:
+### Page heading
 
 |Requirements|Evidence|Issues|
 |------------|-------|-------|
@@ -20,7 +18,7 @@
 
 |Requirements|Evidence|Issues|
 |------------|-------|-------|
-|The <ul> used for navigation link must be inside the <header>.|----|----|
+|The `<ul>` used for navigation link must be inside the <header>.|----|----|
 
 #### Page Sections
 |Requirements|Evidence|Issues|

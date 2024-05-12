@@ -19,6 +19,5 @@ export async function fetchData() {
 
 document.querySelector('submit').addEventListener('click', fetchData);
 
-console.log("help");
 //const button = document.getElementById('submit');
 //button.addEventListener('click', fetchData);

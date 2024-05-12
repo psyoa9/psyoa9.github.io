@@ -91,28 +91,6 @@ h1 {
     text-align: center;
 }
 
-.search-driver {
-    margin: 10px;
-    /*width: 100px; /* Adjust the width as needed */
-    text-align: center;
-}
-
-.search-license {
-    margin: 10px;
-    /*width: 100px; /* Adjust the width as needed */
-    text-align: center;
-}
-
-.submit-button {
-    margin: 10px auto;
-    /*width: 100px; /* Adjust the width as needed */
-    /*display: block;*/
-    background-color: rgb(158, 206, 158);
-    border-radius: 5px; /* Add rounded corners */
-    border: none;
-    text-decoration: none; /* Remove text decoration */
-    color: black;
-} 
 
 /* Responsive layout for screens less than 500px */
 @media screen and (max-width: 500px) {
@@ -130,7 +108,7 @@ h1 {
 
     .navbar > li {
         text-align: left;
-           
+        flex: 1;      
         line-height: 20px;
     }
     
